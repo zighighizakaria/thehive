@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         ngtemplates: 'grunt-angular-templates'
     });
 
-    grunt.loadNpmTasks('grunt-connect-proxy');
+    grunt.loadNpmTasks('grunt-connect-proxy-updated');
     grunt.loadNpmTasks('grunt-injector');
 
     // Configurable paths for the application
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
         dist: 'dist'
     };
 
-    var proxySnippet = require('grunt-connect-proxy/lib/utils').proxyRequest;
+    var proxySnippet = require('grunt-connect-proxy-updated/lib/utils').proxyRequest;
 
     var serveStatic = require('serve-static');
 

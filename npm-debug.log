@@ -1,0 +1,76 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/root/.nvm/v0.10.0/bin/node',
+1 verbose cli   '/root/.nvm/v0.10.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'npm@latest' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose read json /root/.nvm/v0.10.0/lib/package.json
+5 verbose read json /root/.nvm/v0.10.0/lib/package.json
+6 verbose cache add [ 'npm@latest', null ]
+7 verbose cache add name=undefined spec="npm@latest" args=["npm@latest",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'npm@latest',
+8 verbose parsed url   path: 'npm@latest',
+8 verbose parsed url   href: 'npm@latest' }
+9 verbose cache add name="npm" spec="latest" args=["npm","latest"]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'latest',
+10 verbose parsed url   path: 'latest',
+10 verbose parsed url   href: 'latest' }
+11 verbose addNamed [ 'npm', 'latest' ]
+12 verbose addNamed [ null, null ]
+13 silly lockFile 588f5fcc-npm-latest npm@latest
+14 verbose lock npm@latest /root/.npm/588f5fcc-npm-latest.lock
+15 info addNameTag [ 'npm', 'latest' ]
+16 verbose url raw npm
+17 verbose url resolving [ 'https://registry.npmjs.org/', './npm' ]
+18 verbose url resolved https://registry.npmjs.org/npm
+19 info trying registry request attempt 1 at 11:58:57
+20 http GET https://registry.npmjs.org/npm
+21 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+22 info trying registry request attempt 2 at 11:59:07
+23 http GET https://registry.npmjs.org/npm
+24 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+25 info trying registry request attempt 3 at 12:00:07
+26 http GET https://registry.npmjs.org/npm
+27 silly lockFile 588f5fcc-npm-latest npm@latest
+28 silly lockFile 588f5fcc-npm-latest npm@latest
+29 error Error: CERT_UNTRUSTED
+29 error     at SecurePair.<anonymous> (tls.js:1271:32)
+29 error     at SecurePair.EventEmitter.emit (events.js:92:17)
+29 error     at SecurePair.maybeInitFinished (tls.js:883:10)
+29 error     at CleartextStream.read [as _read] (tls.js:421:15)
+29 error     at CleartextStream.Readable.read (_stream_readable.js:293:10)
+29 error     at EncryptedStream.write [as _write] (tls.js:330:25)
+29 error     at doWrite (_stream_writable.js:211:10)
+29 error     at writeOrBuffer (_stream_writable.js:201:5)
+29 error     at EncryptedStream.Writable.write (_stream_writable.js:172:11)
+29 error     at write (_stream_readable.js:547:24)
+30 error If you need help, you may report this log at:
+30 error     <http://github.com/isaacs/npm/issues>
+30 error or email it to:
+30 error     <npm-@googlegroups.com>
+31 error System Linux 6.5.0-1014-aws
+32 error command "/root/.nvm/v0.10.0/bin/node" "/root/.nvm/v0.10.0/bin/npm" "install" "-g" "npm@latest"
+33 error cwd /opt/TheHive
+34 error node -v v0.10.0
+35 error npm -v 1.2.14
+36 verbose exit [ 1, true ]
